@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Html CRUD with Pure JavaScript
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="dashboard.js"></script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Id*</label><label class="validation-error hide" id="IdValidationError">This field is required.</label>
+                        <input type="text" name="Id" id="Id">
+                    </div>
+
+                    <div>
+                        <label>Name</label>
+                        <input type="text" name="Name" id="Name">
+                    </div>
+
+                    <div>
+                        <label>Email</label>
+                        <input type="text" name="Email" id="Email">
+                    </div>
+
+                    
+                    <div>
+                        <label>Class</label>
+                        <input type="text" name="Class" id="Class">
+                    </div>
+                       
+                    <div>
+                        <label>Year</label>
+                        <input type="text" name="Year" id="Year">
+                    </div>
+
+                    <div>
+                        <label>City</label>
+                        <input type="text" name="City" id="City">
+                    </div>
+
+                    <div>
+                        <label>Country</label>
+                        <input type="text" name="Country" id="Country">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+                 <!-- End of form -->
+            </td>
+            <!-- End of first td -->
+            <td>
+                <table class="list" id="employeeList">
+                    <tbody>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Class</th>
+                            <th>Year</th>
+                            <th>City</th>
+                            <th>Country</th>
+                            <th></th>
+                        </tr>
+                    </tbody>
+                     <!-- End of thead -->
+                 </table>
+            </td>
+             <!-- End of second td -->
+        </tr>
+          <!-- End of tr -->
+    </table>
+     <!-- End of table -->
+    <script src="script.js"></script>
+</body>
+
+</html>
